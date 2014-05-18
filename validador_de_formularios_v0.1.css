@@ -1,0 +1,62 @@
+.input-error {
+  border-color: rgba(200,0,50,0.5);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 0, 0, 0.1);
+  box-shadow: 0 1px 0px rgba(255, 0, 0, 0.1);
+}
+
+.input-error:focus {
+  border-color: rgba(200,0,50,0.3);
+  -webkit-box-shadow: 0 1px 0px rgba(255, 0, 0, 0.1);
+  box-shadow: 0 1px 0px rgba(255, 0, 0, 0.1);
+}
+
+.input-success {
+  border-color: rgba(0,200,50,0.5);
+  -webkit-box-shadow: 0 1px 0px rgba(0, 100, 50, 0.1);
+  box-shadow: 0 1px 0px rgba(0, 100, 50, 0.1);
+}
+
+.input-success:focus {
+  border-color: rgba(0,200,50,0.3);
+  -webkit-box-shadow: 0 1px 0px rgba(0, 100, 50, 0.1);
+  box-shadow: 0 1px 0px rgba(0, 100, 50, 0.1);
+}
+
+.alert-box-error, .alert-box-success {
+  position:absolute;
+  margin-bottom:0px;
+  right:15px;
+  padding:0px;
+}
+
+.alert-box-error {
+  background: rgba(200,0,50,0.5);
+}
+
+.alert-box-success {
+  background: rgba(0,255,50,0.5);
+}
+
+.alert-box-error a , .alert-box-success a {
+  text-align:center;
+  font-size:22px;
+  display:inline-block;
+  padding:0px;
+  margin:0px;
+  line-height:42px;
+  padding-left:12px;
+  padding-right:12px;
+}
+
+.alert-box-error a {
+ color: rgba(200,0,0,1);
+}
+
+.alert-box-success a {
+ color: rgba(0,200,0,1);
+}
+
+.tooltip {
+  margin-right:50px; 
+  max-width:200px;
+}
