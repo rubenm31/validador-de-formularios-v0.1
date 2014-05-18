@@ -1,0 +1,35 @@
+################################################################################
+######################Validador de formularios v0.1#############################
+Metodo de uso:
+
+inicia_validacion('id del input', 'grupo de caracteres permitidos', minimo de caracteres, maximo de caracteres, debe ser igual a, requerido);
+comprobar_boton('id del boton', ['id del input a comprobar']);
+
+Posibles valores para inicia_validacion():
+id del input -> 									id asignado al input
+grupo de caracteres permitidos -> 			  texto | numeros | texto-numeros | email
+minimo de caracteres -> 									0 | 99
+maximo de caracteres -> 									0 | 99
+debe ser igual a -> 	  id del input al que se debe igualar | false
+requerido -> 											 true | false
+
+Posibles valores para comprobar_boton():
+id del boton ->											id del boton
+id del input a comprobar->							id del input a comprobar
+
+Ejemplo #1 (1 input y 1 boton)
+	inicia_validacion('input1', 'texto-numeros', 6, 10, false, true);
+	comprobar_boton('submit1', ['input1']);
+
+Ejemplo #2 (2 input y 1 boton)
+	inicia_validacion('input1', 'texto-numeros', 6, 10, false, true);
+	inicia_validacion('input2', 'numeros', 4, 8, false, true);
+	comprobar_boton('submit1', ['input1', 'input2']);
+
+Ejemplo #3 (3 input y 1 boton, 2 de los input deben coincidir, el input3 debe ser igual al input2)
+	inicia_validacion('input1', 'texto-numeros', 6, 10, false, true);
+	inicia_validacion('input2', 'email', 5, 20, false, true);
+	inicia_validacion('input3', 'email', 5, 20, 'input2', true);
+	comprobar_boton('submit1', ['input1', 'input2', 'input3']);
+
+################################################################################
